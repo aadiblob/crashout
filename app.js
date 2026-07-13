@@ -393,7 +393,9 @@
   }
 
   function getPromptsForCurrentSetting() {
-    const prompts = getPromptsForCurrentSetting();
+    const prompts = Array.isArray(window.CRASHOUT_PROMPTS)
+      ? window.CRASHOUT_PROMPTS
+      : [];
 
     if (!currentSetting) return [];
 
@@ -441,9 +443,7 @@
   }
 
   function choosePrompt() {
-    const prompts = Array.isArray(window.CRASHOUT_PROMPTS)
-      ? window.CRASHOUT_PROMPTS
-      : [];
+    const prompts = getPromptsForCurrentSetting();
 
     if (prompts.length === 0) {
       return {
