@@ -2,12 +2,17 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no"
+  >
   <meta name="theme-color" content="#ff4f87">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="apple-mobile-web-app-title" content="Crashout">
+
   <title>Crashout</title>
+
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="icon" href="assets/icon-192.png">
   <link rel="apple-touch-icon" href="assets/icon-192.png">
@@ -17,19 +22,25 @@
   <main id="game" aria-live="polite">
     <header class="brand">
       <div class="brand__name">CRASHOUT</div>
-      <div id="status" class="brand__status">Put 2–8 fingers down</div>
+      <div id="status" class="brand__status">Put 2–5 fingers down</div>
     </header>
 
-    <section id="touchLayer" class="touch-layer" aria-label="Finger selection area"></section>
+    <section
+      id="touchLayer"
+      class="touch-layer"
+      aria-label="Finger selection area"
+    ></section>
 
     <section id="promptScreen" class="prompt-screen" aria-hidden="true">
       <div class="prompt-card">
         <div class="prompt-card__eyebrow">YOU’RE UP</div>
         <p id="promptText" class="prompt-card__text"></p>
-        <button id="nextRound" class="prompt-card__button" type="button">NEXT ROUND</button>
+        <button id="nextRound" class="prompt-card__button" type="button">
+          NEXT ROUND
+        </button>
       </div>
     </section>
-</main>
+  </main>
 
   <script src="prompts.js"></script>
   <script src="app.js"></script>

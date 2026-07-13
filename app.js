@@ -8,7 +8,6 @@
   const MOVE_TOLERANCE_PX = 26;
   const SELECTION_DURATION_MS = 1700;
   const WINNER_HOLD_MS = 750;
-  const RECENT_PROMPT_LIMIT = 10;
 
   const game = document.getElementById("game");
   const touchLayer = document.getElementById("touchLayer");
@@ -21,8 +20,9 @@
   let gameState = "collecting";
   let readyTimer = null;
   let selectionTimers = [];
-  let recentPromptIds = [];
-  let lastPrimaryTag = null;
+  let promptDeckIds = [];
+  let promptDeckSignature = "";
+  let lastPromptId = null;
 
   const THEMES = [
     { a: "#59C7FF", b: "#7B61FF", angle: "145deg" }, // light blue → purple
@@ -72,23 +72,6 @@
   }
 
   const effectiveMax = MAX_FINGERS;
-
-  function syncAppHeight() {
-    const isStandalone =
-      window.matchMedia("(display-mode: standalone)").matches ||
-      window.navigator.standalone === true;
-
-    const measuredHeight = Math.max(
-      window.innerHeight || 0,
-      document.documentElement.clientHeight || 0,
-      isStandalone ? window.screen.height || 0 : 0
-    );
-
-    document.documentElement.style.setProperty(
-      "--app-height",
-      `${measuredHeight}px`
-    );
-  }
 
   function setStatus(message) {
     statusText.textContent = message;
@@ -314,6 +297,90 @@
     }, 1400);
   }
 
+  function shufflePromptIds(ids) {
+    const shuffled = [...ids];
+
+    for (let index = shuffled.length - 1; index > 0; index -= 1) {
+      const swapIndex = secureRandomIndex(index + 1);
+      [shuffled[index], shuffled[swapIndex]] = [
+        shuffled[swapIndex],
+        shuffled[index]
+      ];
+    }
+
+    if (
+      shuffled.length > 1 &&
+      lastPromptId &&
+      shuffled[0] === lastPromptId
+    ) {
+      [shuffled[0], shuffled[1]] = [shuffled[1], shuffled[0]];
+    }
+
+    return shuffled;
+  }
+
+  function getPromptSignature(prompts) {
+    return prompts.map((prompt) => prompt.id).join("|");
+  }
+
+  function savePromptDeck() {
+    try {
+      localStorage.setItem(
+        "crashoutPromptDeckIds",
+        JSON.stringify(promptDeckIds)
+      );
+      localStorage.setItem(
+        "crashoutPromptDeckSignature",
+        promptDeckSignature
+      );
+      localStorage.setItem(
+        "crashoutLastPromptId",
+        lastPromptId || ""
+      );
+    } catch {
+      // Storage is optional. The deck still works for the current session.
+    }
+  }
+
+  function loadPromptDeck(prompts) {
+    const availableIds = prompts.map((prompt) => prompt.id);
+    const availableIdSet = new Set(availableIds);
+    const currentSignature = getPromptSignature(prompts);
+
+    let storedDeck = [];
+    let storedSignature = "";
+    let storedLastPromptId = null;
+
+    try {
+      storedDeck = JSON.parse(
+        localStorage.getItem("crashoutPromptDeckIds") || "[]"
+      );
+      storedSignature =
+        localStorage.getItem("crashoutPromptDeckSignature") || "";
+      storedLastPromptId =
+        localStorage.getItem("crashoutLastPromptId") || null;
+    } catch {
+      storedDeck = [];
+      storedSignature = "";
+      storedLastPromptId = null;
+    }
+
+    const deckIsValid =
+      Array.isArray(storedDeck) &&
+      storedSignature === currentSignature &&
+      storedDeck.every((id) => availableIdSet.has(id)) &&
+      new Set(storedDeck).size === storedDeck.length;
+
+    promptDeckSignature = currentSignature;
+    lastPromptId = storedLastPromptId;
+
+    promptDeckIds = deckIsValid
+      ? storedDeck
+      : shufflePromptIds(availableIds);
+
+    savePromptDeck();
+  }
+
   function choosePrompt() {
     const prompts = Array.isArray(window.CRASHOUT_PROMPTS)
       ? window.CRASHOUT_PROMPTS
@@ -327,31 +394,35 @@
       };
     }
 
-    let candidates = prompts.filter((prompt) => !recentPromptIds.includes(prompt.id));
+    const currentSignature = getPromptSignature(prompts);
 
-    if (lastPrimaryTag && candidates.length > 1) {
-      const differentStyle = candidates.filter(
-        (prompt) => !Array.isArray(prompt.tags) || prompt.tags[0] !== lastPrimaryTag
+    if (
+      promptDeckSignature !== currentSignature ||
+      promptDeckIds.length === 0
+    ) {
+      promptDeckSignature = currentSignature;
+      promptDeckIds = shufflePromptIds(
+        prompts.map((prompt) => prompt.id)
       );
-      if (differentStyle.length > 0) candidates = differentStyle;
     }
 
-    if (candidates.length === 0) {
-      recentPromptIds = [];
-      candidates = [...prompts];
+    const promptById = new Map(
+      prompts.map((prompt) => [prompt.id, prompt])
+    );
+
+    let selectedId = promptDeckIds.shift();
+    let selected = promptById.get(selectedId);
+
+    if (!selected) {
+      promptDeckIds = shufflePromptIds(
+        prompts.map((prompt) => prompt.id)
+      );
+      selectedId = promptDeckIds.shift();
+      selected = promptById.get(selectedId);
     }
 
-    const selected = candidates[secureRandomIndex(candidates.length)];
-    recentPromptIds.push(selected.id);
-    recentPromptIds = recentPromptIds.slice(-RECENT_PROMPT_LIMIT);
-    lastPrimaryTag = Array.isArray(selected.tags) ? selected.tags[0] : null;
-
-    try {
-      localStorage.setItem("crashoutRecentPromptIds", JSON.stringify(recentPromptIds));
-      localStorage.setItem("crashoutLastPrimaryTag", lastPrimaryTag || "");
-    } catch {
-      // Storage is optional. The game still works without it.
-    }
+    lastPromptId = selectedId;
+    savePromptDeck();
 
     return selected;
   }
@@ -364,6 +435,7 @@
     promptText.textContent = prompt.text;
     promptScreen.classList.add("is-visible");
     promptScreen.setAttribute("aria-hidden", "false");
+    document.documentElement.classList.add("is-prompt");
 
     touches.forEach((touch) => {
       window.clearTimeout(touch.lockTimer);
@@ -379,6 +451,7 @@
 
     promptScreen.classList.remove("is-visible");
     promptScreen.setAttribute("aria-hidden", "true");
+    document.documentElement.classList.remove("is-prompt");
     document.body.classList.remove("is-selecting");
 
     touches.forEach((touch) => {
@@ -389,19 +462,6 @@
 
     gameState = "collecting";
     updateStatus();
-  }
-
-  function loadSessionHistory() {
-    try {
-      const storedIds = JSON.parse(localStorage.getItem("crashoutRecentPromptIds") || "[]");
-      if (Array.isArray(storedIds)) {
-        recentPromptIds = storedIds.slice(-RECENT_PROMPT_LIMIT);
-      }
-      lastPrimaryTag = localStorage.getItem("crashoutLastPrimaryTag") || null;
-    } catch {
-      recentPromptIds = [];
-      lastPrimaryTag = null;
-    }
   }
 
   touchLayer.addEventListener("pointerdown", (event) => {
@@ -435,15 +495,6 @@
 
   nextRoundButton.addEventListener("click", resetRound);
 
-  window.addEventListener("resize", syncAppHeight);
-  window.addEventListener("orientationchange", () => {
-    window.setTimeout(syncAppHeight, 120);
-    window.setTimeout(syncAppHeight, 420);
-  });
-
-  if (window.visualViewport) {
-    window.visualViewport.addEventListener("resize", syncAppHeight);
-  }
 
   document.addEventListener("visibilitychange", () => {
     if (document.hidden && gameState !== "prompt") {
@@ -451,9 +502,13 @@
     }
   });
 
-  syncAppHeight();
   applyRandomTheme();
-  loadSessionHistory();
+
+  const startupPrompts = Array.isArray(window.CRASHOUT_PROMPTS)
+    ? window.CRASHOUT_PROMPTS
+    : [];
+  loadPromptDeck(startupPrompts);
+
   updateStatus();
 
   if ("serviceWorker" in navigator) {
