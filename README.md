@@ -25,7 +25,18 @@ python -m http.server 8000
 
 Then open `http://localhost:8000` on a browser. Multi-touch should be tested on a real phone.
 
+## Deploy with Cloudflare Pages
 
+1. Create a new GitHub repository named `crashout`.
+2. Upload all files in this folder to the repository root.
+3. In Cloudflare, open **Workers & Pages** and create a Pages project.
+4. Connect the `crashout` GitHub repository.
+5. Choose **No framework**.
+6. Leave the build command blank.
+7. Set the output directory to `/` or leave it at the repository root.
+8. Deploy.
+
+Every push to the main GitHub branch will update the site.
 
 ## Add or edit dares
 
@@ -39,6 +50,11 @@ Open `prompts.js`. Each entry follows this format:
 }
 ```
 
+The tags are invisible to players. They only help the randomizer avoid showing the same style repeatedly.
+
+## Important mobile note
+
+The code accepts up to eight touches, but the physical touchscreen and browser determine the true maximum. The app displays the device's reported `navigator.maxTouchPoints` value at the bottom of the screen.
 
 
 ## V2 changes

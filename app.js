@@ -73,6 +73,23 @@
 
   const effectiveMax = MAX_FINGERS;
 
+  function syncAppHeight() {
+    const isStandalone =
+      window.matchMedia("(display-mode: standalone)").matches ||
+      window.navigator.standalone === true;
+
+    const measuredHeight = Math.max(
+      window.innerHeight || 0,
+      document.documentElement.clientHeight || 0,
+      isStandalone ? window.screen.height || 0 : 0
+    );
+
+    document.documentElement.style.setProperty(
+      "--app-height",
+      `${measuredHeight}px`
+    );
+  }
+
   function setStatus(message) {
     statusText.textContent = message;
   }
@@ -418,12 +435,23 @@
 
   nextRoundButton.addEventListener("click", resetRound);
 
+  window.addEventListener("resize", syncAppHeight);
+  window.addEventListener("orientationchange", () => {
+    window.setTimeout(syncAppHeight, 120);
+    window.setTimeout(syncAppHeight, 420);
+  });
+
+  if (window.visualViewport) {
+    window.visualViewport.addEventListener("resize", syncAppHeight);
+  }
+
   document.addEventListener("visibilitychange", () => {
     if (document.hidden && gameState !== "prompt") {
       abortSelection("Round reset");
     }
   });
 
+  syncAppHeight();
   applyRandomTheme();
   loadSessionHistory();
   updateStatus();
