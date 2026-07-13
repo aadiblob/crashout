@@ -1,4 +1,4 @@
-const CACHE_NAME = "crashout-v9";
+const CACHE_NAME = "crashout-v9-1";
 const APP_SHELL = [
   "./",
   "./index.html",
