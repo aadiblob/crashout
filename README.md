@@ -1,4 +1,4 @@
-# Crashout
+# Crashout V2
 
 A mobile-first, one-phone finger chooser that immediately gives the selected player an unhinged dare.
 
@@ -55,3 +55,18 @@ The tags are invisible to players. They only help the randomizer avoid showing t
 ## Important mobile note
 
 The code accepts up to eight touches, but the physical touchscreen and browser determine the true maximum. The app displays the device's reported `navigator.maxTouchPoints` value at the bottom of the screen.
+
+
+## V2 changes
+
+- Chooses a different gradient theme on each fresh app launch
+- Includes eight gradient combinations
+- Uses the supplied Crashout artwork for the app icon
+- Accepts up to eight pointer events even when the browser reports a lower hardware limit
+- Uses a network-first service worker so GitHub/Cloudflare updates appear more reliably
+
+### Multi-touch hardware limitation
+
+The JavaScript accepts up to eight touches. The physical phone digitizer and mobile browser
+still determine how many contacts can actually be reported. A device that only emits five
+touch contacts cannot be forced to emit a sixth through HTML or JavaScript.

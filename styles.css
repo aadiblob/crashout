@@ -1,6 +1,7 @@
 :root {
   --bg-a: #ff4f87;
   --bg-b: #ff7a45;
+  --bg-angle: 145deg;
   --white: #ffffff;
   --ink: #221126;
   --safe-top: env(safe-area-inset-top, 0px);
@@ -41,7 +42,7 @@ button {
   overflow: hidden;
   background:
     radial-gradient(circle at 20% 10%, rgba(255,255,255,0.18), transparent 32%),
-    linear-gradient(145deg, var(--bg-a), var(--bg-b));
+    linear-gradient(var(--bg-angle), var(--bg-a), var(--bg-b));
 }
 
 #game::before {

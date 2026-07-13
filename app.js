@@ -25,13 +25,60 @@
   let recentPromptIds = [];
   let lastPrimaryTag = null;
 
-  const supportedTouches = navigator.maxTouchPoints || MAX_FINGERS;
-  const effectiveMax = Math.max(1, Math.min(MAX_FINGERS, supportedTouches));
+  const THEMES = [
+    { a: "#59C7FF", b: "#7B61FF", angle: "145deg" }, // light blue → purple
+    { a: "#55D6BE", b: "#4EA8DE", angle: "145deg" }, // green → light blue
+    { a: "#FFD166", b: "#FF7A45", angle: "145deg" }, // yellow → orange
+    { a: "#FF4F87", b: "#FF7A45", angle: "145deg" }, // pink → orange
+    { a: "#A78BFA", b: "#F472B6", angle: "145deg" }, // purple → pink
+    { a: "#2DD4BF", b: "#3B82F6", angle: "145deg" }, // teal → blue
+    { a: "#FF8FAB", b: "#C77DFF", angle: "145deg" }, // pink → purple
+    { a: "#7BDFF2", b: "#B2F7A1", angle: "145deg" }  // light blue → green
+  ];
+
+  function applyRandomTheme() {
+    let previousIndex = -1;
+
+    try {
+      previousIndex = Number.parseInt(
+        localStorage.getItem("crashoutThemeIndex") || "-1",
+        10
+      );
+    } catch {
+      previousIndex = -1;
+    }
+
+    let themeIndex = secureRandomIndex(THEMES.length);
+
+    if (THEMES.length > 1 && themeIndex === previousIndex) {
+      const offset = 1 + secureRandomIndex(THEMES.length - 1);
+      themeIndex = (themeIndex + offset) % THEMES.length;
+    }
+
+    const theme = THEMES[themeIndex];
+    const root = document.documentElement;
+
+    root.style.setProperty("--bg-a", theme.a);
+    root.style.setProperty("--bg-b", theme.b);
+    root.style.setProperty("--bg-angle", theme.angle);
+
+    const themeMeta = document.querySelector('meta[name="theme-color"]');
+    if (themeMeta) themeMeta.setAttribute("content", theme.a);
+
+    try {
+      localStorage.setItem("crashoutThemeIndex", String(themeIndex));
+    } catch {
+      // Theme rotation still works when storage is unavailable.
+    }
+  }
+
+  const reportedTouchLimit = navigator.maxTouchPoints || 0;
+  const effectiveMax = MAX_FINGERS;
 
   deviceNote.textContent =
-    supportedTouches < MIN_FINGERS
-      ? "This device reports limited multi-touch support."
-      : `This device reports support for ${supportedTouches} simultaneous touch${supportedTouches === 1 ? "" : "es"}. Crashout uses up to ${effectiveMax}.`;
+    reportedTouchLimit > 0
+      ? `Browser reports up to ${reportedTouchLimit} simultaneous touches. Crashout accepts up to ${MAX_FINGERS} if the hardware allows it.`
+      : `Crashout accepts up to ${MAX_FINGERS} simultaneous touches.`;
 
   function setStatus(message) {
     statusText.textContent = message;
@@ -384,6 +431,7 @@
     }
   });
 
+  applyRandomTheme();
   loadSessionHistory();
   updateStatus();
 
