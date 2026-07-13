@@ -3,8 +3,8 @@
 
   const MAX_FINGERS = 8;
   const MIN_FINGERS = 2;
-  const LOCK_DELAY_MS = 850;
-  const READY_DELAY_MS = 700;
+  const LOCK_DELAY_MS = 650;
+  const READY_DELAY_MS = 500;
   const MOVE_TOLERANCE_PX = 26;
   const SELECTION_DURATION_MS = 1700;
   const WINNER_HOLD_MS = 750;
