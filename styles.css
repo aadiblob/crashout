@@ -39,24 +39,27 @@ body {
 }
 
 /*
-  Overscanned backdrop:
-  iOS can expose a small area beneath an installed PWA. This layer extends
-  far beyond the measured viewport so the exposed region inherits the same
-  ombré instead of falling back to white.
+  Sole gradient painter.
+  In iOS standalone mode the web view is shorter than the physical screen.
+  This layer is the ONLY element painting the ombre, and it overhangs the
+  bottom so the overscan strip is a continuous extension of the same gradient
+  rather than a second, mismatched one. background-size is pinned to the full
+  painted box so the gradient actually completes across it.
 */
 body::before {
   content: "";
   position: fixed;
-  top: -180px;
-  right: -80px;
-  bottom: -420px;
-  left: -80px;
+  top: 0;
+  right: 0;
+  bottom: -300px;
+  left: 0;
   z-index: -10;
   pointer-events: none;
   background:
     radial-gradient(circle at 20% 10%, rgba(255,255,255,0.18), transparent 32%),
     linear-gradient(var(--bg-angle), var(--bg-a), var(--bg-b));
-  background-attachment: fixed;
+  background-size: 100% calc(100dvh + 300px);
+  background-repeat: no-repeat;
 }
 
 button {
@@ -70,9 +73,7 @@ button {
   height: 100dvh;
   isolation: isolate;
   overflow: hidden;
-  background:
-    radial-gradient(circle at 20% 10%, rgba(255,255,255,0.18), transparent 32%),
-    linear-gradient(var(--bg-angle), var(--bg-a), var(--bg-b));
+  background: transparent;
 }
 
 #game::before {
