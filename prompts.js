@@ -5,6 +5,12 @@ window.CRASHOUT_PROMPTS = [
     "tags": [
       "phone",
       "dm"
+    ],
+    "settings": [
+      "bar",
+      "pregame",
+      "house-party",
+      "anywhere"
     ]
   },
   {
@@ -13,6 +19,10 @@ window.CRASHOUT_PROMPTS = [
     "tags": [
       "dance",
       "public"
+    ],
+    "settings": [
+      "bar",
+      "house-party"
     ]
   },
   {
@@ -21,6 +31,10 @@ window.CRASHOUT_PROMPTS = [
     "tags": [
       "dance",
       "public"
+    ],
+    "settings": [
+      "bar",
+      "house-party"
     ]
   },
   {
@@ -28,6 +42,9 @@ window.CRASHOUT_PROMPTS = [
     "text": "Ask the bartender for their number.",
     "tags": [
       "social",
+      "bar"
+    ],
+    "settings": [
       "bar"
     ]
   },
@@ -37,6 +54,12 @@ window.CRASHOUT_PROMPTS = [
     "tags": [
       "phone",
       "group-chat"
+    ],
+    "settings": [
+      "bar",
+      "pregame",
+      "house-party",
+      "anywhere"
     ]
   },
   {
@@ -45,6 +68,12 @@ window.CRASHOUT_PROMPTS = [
     "tags": [
       "phone",
       "instagram"
+    ],
+    "settings": [
+      "bar",
+      "pregame",
+      "house-party",
+      "anywhere"
     ]
   },
   {
@@ -53,6 +82,12 @@ window.CRASHOUT_PROMPTS = [
     "tags": [
       "group",
       "drink"
+    ],
+    "settings": [
+      "bar",
+      "pregame",
+      "house-party",
+      "anywhere"
     ]
   },
   {
@@ -61,6 +96,12 @@ window.CRASHOUT_PROMPTS = [
     "tags": [
       "phone",
       "dm"
+    ],
+    "settings": [
+      "bar",
+      "pregame",
+      "house-party",
+      "anywhere"
     ]
   },
   {
@@ -69,6 +110,12 @@ window.CRASHOUT_PROMPTS = [
     "tags": [
       "phone",
       "messages"
+    ],
+    "settings": [
+      "bar",
+      "pregame",
+      "house-party",
+      "anywhere"
     ]
   },
   {
@@ -77,6 +124,12 @@ window.CRASHOUT_PROMPTS = [
     "tags": [
       "phone",
       "instagram"
+    ],
+    "settings": [
+      "bar",
+      "pregame",
+      "house-party",
+      "anywhere"
     ]
   },
   {
@@ -85,6 +138,12 @@ window.CRASHOUT_PROMPTS = [
     "tags": [
       "phone",
       "voice-note"
+    ],
+    "settings": [
+      "bar",
+      "pregame",
+      "house-party",
+      "anywhere"
     ]
   },
   {
@@ -93,6 +152,12 @@ window.CRASHOUT_PROMPTS = [
     "tags": [
       "phone",
       "snapchat"
+    ],
+    "settings": [
+      "bar",
+      "pregame",
+      "house-party",
+      "anywhere"
     ]
   },
   {
@@ -101,6 +166,12 @@ window.CRASHOUT_PROMPTS = [
     "tags": [
       "phone",
       "instagram"
+    ],
+    "settings": [
+      "bar",
+      "pregame",
+      "house-party",
+      "anywhere"
     ]
   },
   {
@@ -109,6 +180,12 @@ window.CRASHOUT_PROMPTS = [
     "tags": [
       "phone",
       "family"
+    ],
+    "settings": [
+      "bar",
+      "pregame",
+      "house-party",
+      "anywhere"
     ]
   },
   {
@@ -117,6 +194,12 @@ window.CRASHOUT_PROMPTS = [
     "tags": [
       "phone",
       "dm"
+    ],
+    "settings": [
+      "bar",
+      "pregame",
+      "house-party",
+      "anywhere"
     ]
   },
   {
@@ -125,6 +208,12 @@ window.CRASHOUT_PROMPTS = [
     "tags": [
       "phone",
       "instagram"
+    ],
+    "settings": [
+      "bar",
+      "pregame",
+      "house-party",
+      "anywhere"
     ]
   },
   {
@@ -133,6 +222,12 @@ window.CRASHOUT_PROMPTS = [
     "tags": [
       "phone",
       "instagram"
+    ],
+    "settings": [
+      "bar",
+      "pregame",
+      "house-party",
+      "anywhere"
     ]
   },
   {
@@ -141,6 +236,12 @@ window.CRASHOUT_PROMPTS = [
     "tags": [
       "phone",
       "messages"
+    ],
+    "settings": [
+      "bar",
+      "pregame",
+      "house-party",
+      "anywhere"
     ]
   },
   {
@@ -149,6 +250,12 @@ window.CRASHOUT_PROMPTS = [
     "tags": [
       "phone",
       "selfie"
+    ],
+    "settings": [
+      "bar",
+      "pregame",
+      "house-party",
+      "anywhere"
     ]
   },
   {
@@ -157,6 +264,12 @@ window.CRASHOUT_PROMPTS = [
     "tags": [
       "phone",
       "messages"
+    ],
+    "settings": [
+      "bar",
+      "pregame",
+      "house-party",
+      "anywhere"
     ]
   },
   {
@@ -165,6 +278,12 @@ window.CRASHOUT_PROMPTS = [
     "tags": [
       "phone",
       "profile"
+    ],
+    "settings": [
+      "bar",
+      "pregame",
+      "house-party",
+      "anywhere"
     ]
   },
   {
@@ -173,6 +292,12 @@ window.CRASHOUT_PROMPTS = [
     "tags": [
       "phone",
       "camera-roll"
+    ],
+    "settings": [
+      "bar",
+      "pregame",
+      "house-party",
+      "anywhere"
     ]
   },
   {
@@ -181,6 +306,12 @@ window.CRASHOUT_PROMPTS = [
     "tags": [
       "dance",
       "public"
+    ],
+    "settings": [
+      "bar",
+      "pregame",
+      "house-party",
+      "anywhere"
     ]
   },
   {
@@ -189,6 +320,12 @@ window.CRASHOUT_PROMPTS = [
     "tags": [
       "dance",
       "group"
+    ],
+    "settings": [
+      "bar",
+      "pregame",
+      "house-party",
+      "anywhere"
     ]
   },
   {
@@ -197,6 +334,12 @@ window.CRASHOUT_PROMPTS = [
     "tags": [
       "performance",
       "public"
+    ],
+    "settings": [
+      "bar",
+      "pregame",
+      "house-party",
+      "anywhere"
     ]
   },
   {
@@ -205,6 +348,10 @@ window.CRASHOUT_PROMPTS = [
     "tags": [
       "performance",
       "dance"
+    ],
+    "settings": [
+      "bar",
+      "house-party"
     ]
   },
   {
@@ -213,6 +360,12 @@ window.CRASHOUT_PROMPTS = [
     "tags": [
       "performance",
       "public"
+    ],
+    "settings": [
+      "bar",
+      "pregame",
+      "house-party",
+      "anywhere"
     ]
   },
   {
@@ -221,6 +374,12 @@ window.CRASHOUT_PROMPTS = [
     "tags": [
       "dance",
       "group"
+    ],
+    "settings": [
+      "bar",
+      "pregame",
+      "house-party",
+      "anywhere"
     ]
   },
   {
@@ -229,6 +388,12 @@ window.CRASHOUT_PROMPTS = [
     "tags": [
       "performance",
       "public"
+    ],
+    "settings": [
+      "bar",
+      "pregame",
+      "house-party",
+      "anywhere"
     ]
   },
   {
@@ -237,6 +402,12 @@ window.CRASHOUT_PROMPTS = [
     "tags": [
       "dance",
       "video"
+    ],
+    "settings": [
+      "bar",
+      "pregame",
+      "house-party",
+      "anywhere"
     ]
   },
   {
@@ -245,6 +416,10 @@ window.CRASHOUT_PROMPTS = [
     "tags": [
       "public",
       "social"
+    ],
+    "settings": [
+      "bar",
+      "house-party"
     ]
   },
   {
@@ -253,6 +428,12 @@ window.CRASHOUT_PROMPTS = [
     "tags": [
       "performance",
       "group"
+    ],
+    "settings": [
+      "bar",
+      "pregame",
+      "house-party",
+      "anywhere"
     ]
   },
   {
@@ -261,6 +442,12 @@ window.CRASHOUT_PROMPTS = [
     "tags": [
       "performance",
       "group"
+    ],
+    "settings": [
+      "bar",
+      "pregame",
+      "house-party",
+      "anywhere"
     ]
   },
   {
@@ -268,6 +455,9 @@ window.CRASHOUT_PROMPTS = [
     "text": "Give a completely serious TED Talk about why the bar is an inefficient system.",
     "tags": [
       "performance",
+      "bar"
+    ],
+    "settings": [
       "bar"
     ]
   },
@@ -277,6 +467,12 @@ window.CRASHOUT_PROMPTS = [
     "tags": [
       "performance",
       "public"
+    ],
+    "settings": [
+      "bar",
+      "pregame",
+      "house-party",
+      "anywhere"
     ]
   },
   {
@@ -285,6 +481,12 @@ window.CRASHOUT_PROMPTS = [
     "tags": [
       "performance",
       "public"
+    ],
+    "settings": [
+      "bar",
+      "pregame",
+      "house-party",
+      "anywhere"
     ]
   },
   {
@@ -293,6 +495,12 @@ window.CRASHOUT_PROMPTS = [
     "tags": [
       "dance",
       "group"
+    ],
+    "settings": [
+      "bar",
+      "pregame",
+      "house-party",
+      "anywhere"
     ]
   },
   {
@@ -301,6 +509,10 @@ window.CRASHOUT_PROMPTS = [
     "tags": [
       "social",
       "public"
+    ],
+    "settings": [
+      "bar",
+      "house-party"
     ]
   },
   {
@@ -309,6 +521,10 @@ window.CRASHOUT_PROMPTS = [
     "tags": [
       "social",
       "photo"
+    ],
+    "settings": [
+      "bar",
+      "house-party"
     ]
   },
   {
@@ -317,6 +533,12 @@ window.CRASHOUT_PROMPTS = [
     "tags": [
       "performance",
       "group"
+    ],
+    "settings": [
+      "bar",
+      "pregame",
+      "house-party",
+      "anywhere"
     ]
   },
   {
@@ -325,6 +547,12 @@ window.CRASHOUT_PROMPTS = [
     "tags": [
       "group",
       "question"
+    ],
+    "settings": [
+      "bar",
+      "pregame",
+      "house-party",
+      "anywhere"
     ]
   },
   {
@@ -333,6 +561,10 @@ window.CRASHOUT_PROMPTS = [
     "tags": [
       "social",
       "public"
+    ],
+    "settings": [
+      "bar",
+      "house-party"
     ]
   },
   {
@@ -341,6 +573,9 @@ window.CRASHOUT_PROMPTS = [
     "tags": [
       "bar",
       "performance"
+    ],
+    "settings": [
+      "bar"
     ]
   },
   {
@@ -349,6 +584,10 @@ window.CRASHOUT_PROMPTS = [
     "tags": [
       "social",
       "group"
+    ],
+    "settings": [
+      "bar",
+      "house-party"
     ]
   },
   {
@@ -357,6 +596,10 @@ window.CRASHOUT_PROMPTS = [
     "tags": [
       "social",
       "public"
+    ],
+    "settings": [
+      "bar",
+      "house-party"
     ]
   },
   {
@@ -365,6 +608,10 @@ window.CRASHOUT_PROMPTS = [
     "tags": [
       "social",
       "photo"
+    ],
+    "settings": [
+      "bar",
+      "house-party"
     ]
   },
   {
@@ -373,6 +620,10 @@ window.CRASHOUT_PROMPTS = [
     "tags": [
       "social",
       "group"
+    ],
+    "settings": [
+      "bar",
+      "house-party"
     ]
   },
   {
@@ -381,6 +632,12 @@ window.CRASHOUT_PROMPTS = [
     "tags": [
       "phone",
       "group"
+    ],
+    "settings": [
+      "bar",
+      "pregame",
+      "house-party",
+      "anywhere"
     ]
   },
   {
@@ -389,6 +646,12 @@ window.CRASHOUT_PROMPTS = [
     "tags": [
       "phone",
       "instagram"
+    ],
+    "settings": [
+      "bar",
+      "pregame",
+      "house-party",
+      "anywhere"
     ]
   },
   {
@@ -397,6 +660,12 @@ window.CRASHOUT_PROMPTS = [
     "tags": [
       "group",
       "ongoing"
+    ],
+    "settings": [
+      "bar",
+      "pregame",
+      "house-party",
+      "anywhere"
     ]
   },
   {
@@ -405,6 +674,12 @@ window.CRASHOUT_PROMPTS = [
     "tags": [
       "phone",
       "group"
+    ],
+    "settings": [
+      "bar",
+      "pregame",
+      "house-party",
+      "anywhere"
     ]
   },
   {
@@ -413,6 +688,12 @@ window.CRASHOUT_PROMPTS = [
     "tags": [
       "phone",
       "group"
+    ],
+    "settings": [
+      "bar",
+      "pregame",
+      "house-party",
+      "anywhere"
     ]
   },
   {
@@ -421,6 +702,12 @@ window.CRASHOUT_PROMPTS = [
     "tags": [
       "phone",
       "instagram"
+    ],
+    "settings": [
+      "bar",
+      "pregame",
+      "house-party",
+      "anywhere"
     ]
   },
   {
@@ -429,6 +716,12 @@ window.CRASHOUT_PROMPTS = [
     "tags": [
       "phone",
       "group"
+    ],
+    "settings": [
+      "bar",
+      "pregame",
+      "house-party",
+      "anywhere"
     ]
   },
   {
@@ -437,6 +730,12 @@ window.CRASHOUT_PROMPTS = [
     "tags": [
       "performance",
       "group"
+    ],
+    "settings": [
+      "bar",
+      "pregame",
+      "house-party",
+      "anywhere"
     ]
   },
   {
@@ -445,6 +744,12 @@ window.CRASHOUT_PROMPTS = [
     "tags": [
       "phone",
       "instagram"
+    ],
+    "settings": [
+      "bar",
+      "pregame",
+      "house-party",
+      "anywhere"
     ]
   },
   {
@@ -453,6 +758,12 @@ window.CRASHOUT_PROMPTS = [
     "tags": [
       "group",
       "performance"
+    ],
+    "settings": [
+      "bar",
+      "pregame",
+      "house-party",
+      "anywhere"
     ]
   },
   {
@@ -461,6 +772,12 @@ window.CRASHOUT_PROMPTS = [
     "tags": [
       "phone",
       "messages"
+    ],
+    "settings": [
+      "bar",
+      "pregame",
+      "house-party",
+      "anywhere"
     ]
   },
   {
@@ -469,6 +786,12 @@ window.CRASHOUT_PROMPTS = [
     "tags": [
       "phone",
       "messages"
+    ],
+    "settings": [
+      "bar",
+      "pregame",
+      "house-party",
+      "anywhere"
     ]
   },
   {
@@ -477,6 +800,12 @@ window.CRASHOUT_PROMPTS = [
     "tags": [
       "phone",
       "messages"
+    ],
+    "settings": [
+      "bar",
+      "pregame",
+      "house-party",
+      "anywhere"
     ]
   },
   {
@@ -485,6 +814,12 @@ window.CRASHOUT_PROMPTS = [
     "tags": [
       "phone",
       "messages"
+    ],
+    "settings": [
+      "bar",
+      "pregame",
+      "house-party",
+      "anywhere"
     ]
   },
   {
@@ -493,6 +828,12 @@ window.CRASHOUT_PROMPTS = [
     "tags": [
       "phone",
       "performance"
+    ],
+    "settings": [
+      "bar",
+      "pregame",
+      "house-party",
+      "anywhere"
     ]
   },
   {
@@ -501,6 +842,12 @@ window.CRASHOUT_PROMPTS = [
     "tags": [
       "phone",
       "social-media"
+    ],
+    "settings": [
+      "bar",
+      "pregame",
+      "house-party",
+      "anywhere"
     ]
   },
   {
@@ -509,6 +856,12 @@ window.CRASHOUT_PROMPTS = [
     "tags": [
       "phone",
       "tiktok"
+    ],
+    "settings": [
+      "bar",
+      "pregame",
+      "house-party",
+      "anywhere"
     ]
   },
   {
@@ -517,6 +870,12 @@ window.CRASHOUT_PROMPTS = [
     "tags": [
       "group",
       "vote"
+    ],
+    "settings": [
+      "bar",
+      "pregame",
+      "house-party",
+      "anywhere"
     ]
   },
   {
@@ -525,6 +884,12 @@ window.CRASHOUT_PROMPTS = [
     "tags": [
       "group",
       "vote"
+    ],
+    "settings": [
+      "bar",
+      "pregame",
+      "house-party",
+      "anywhere"
     ]
   },
   {
@@ -533,6 +898,10 @@ window.CRASHOUT_PROMPTS = [
     "tags": [
       "public",
       "social"
+    ],
+    "settings": [
+      "bar",
+      "house-party"
     ]
   },
   {
@@ -541,6 +910,11 @@ window.CRASHOUT_PROMPTS = [
     "tags": [
       "public",
       "npc"
+    ],
+    "settings": [
+      "bar",
+      "pregame",
+      "house-party"
     ]
   },
   {
@@ -549,6 +923,12 @@ window.CRASHOUT_PROMPTS = [
     "tags": [
       "truth",
       "dating"
+    ],
+    "settings": [
+      "bar",
+      "pregame",
+      "house-party",
+      "anywhere"
     ]
   },
   {
@@ -557,6 +937,12 @@ window.CRASHOUT_PROMPTS = [
     "tags": [
       "truth",
       "social-media"
+    ],
+    "settings": [
+      "bar",
+      "pregame",
+      "house-party",
+      "anywhere"
     ]
   },
   {
@@ -566,6 +952,12 @@ window.CRASHOUT_PROMPTS = [
       "truth",
       "dating",
       "group"
+    ],
+    "settings": [
+      "bar",
+      "pregame",
+      "house-party",
+      "anywhere"
     ]
   },
   {
@@ -574,6 +966,12 @@ window.CRASHOUT_PROMPTS = [
     "tags": [
       "truth",
       "group"
+    ],
+    "settings": [
+      "bar",
+      "pregame",
+      "house-party",
+      "anywhere"
     ]
   },
   {
@@ -582,6 +980,12 @@ window.CRASHOUT_PROMPTS = [
     "tags": [
       "truth",
       "phone"
+    ],
+    "settings": [
+      "bar",
+      "pregame",
+      "house-party",
+      "anywhere"
     ]
   },
   {
@@ -590,6 +994,12 @@ window.CRASHOUT_PROMPTS = [
     "tags": [
       "truth",
       "dating"
+    ],
+    "settings": [
+      "bar",
+      "pregame",
+      "house-party",
+      "anywhere"
     ]
   },
   {
@@ -598,6 +1008,12 @@ window.CRASHOUT_PROMPTS = [
     "tags": [
       "truth",
       "group"
+    ],
+    "settings": [
+      "bar",
+      "pregame",
+      "house-party",
+      "anywhere"
     ]
   },
   {
@@ -606,6 +1022,12 @@ window.CRASHOUT_PROMPTS = [
     "tags": [
       "truth",
       "group"
+    ],
+    "settings": [
+      "bar",
+      "pregame",
+      "house-party",
+      "anywhere"
     ]
   },
   {
@@ -614,6 +1036,12 @@ window.CRASHOUT_PROMPTS = [
     "tags": [
       "performance",
       "group"
+    ],
+    "settings": [
+      "bar",
+      "pregame",
+      "house-party",
+      "anywhere"
     ]
   },
   {
@@ -622,6 +1050,12 @@ window.CRASHOUT_PROMPTS = [
     "tags": [
       "performance",
       "group"
+    ],
+    "settings": [
+      "bar",
+      "pregame",
+      "house-party",
+      "anywhere"
     ]
   },
   {
@@ -630,6 +1064,10 @@ window.CRASHOUT_PROMPTS = [
     "tags": [
       "public",
       "social"
+    ],
+    "settings": [
+      "bar",
+      "house-party"
     ]
   },
   {
@@ -638,6 +1076,9 @@ window.CRASHOUT_PROMPTS = [
     "tags": [
       "bar",
       "performance"
+    ],
+    "settings": [
+      "bar"
     ]
   },
   {
@@ -646,6 +1087,10 @@ window.CRASHOUT_PROMPTS = [
     "tags": [
       "public",
       "social"
+    ],
+    "settings": [
+      "bar",
+      "house-party"
     ]
   },
   {
@@ -654,6 +1099,10 @@ window.CRASHOUT_PROMPTS = [
     "tags": [
       "bar",
       "social"
+    ],
+    "settings": [
+      "bar",
+      "house-party"
     ]
   },
   {
@@ -662,6 +1111,12 @@ window.CRASHOUT_PROMPTS = [
     "tags": [
       "silly",
       "ongoing"
+    ],
+    "settings": [
+      "bar",
+      "pregame",
+      "house-party",
+      "anywhere"
     ]
   },
   {
@@ -670,6 +1125,12 @@ window.CRASHOUT_PROMPTS = [
     "tags": [
       "silly",
       "ongoing"
+    ],
+    "settings": [
+      "bar",
+      "pregame",
+      "house-party",
+      "anywhere"
     ]
   },
   {
@@ -678,6 +1139,12 @@ window.CRASHOUT_PROMPTS = [
     "tags": [
       "performance",
       "silly"
+    ],
+    "settings": [
+      "bar",
+      "pregame",
+      "house-party",
+      "anywhere"
     ]
   },
   {
@@ -686,6 +1153,12 @@ window.CRASHOUT_PROMPTS = [
     "tags": [
       "group",
       "word-game"
+    ],
+    "settings": [
+      "bar",
+      "pregame",
+      "house-party",
+      "anywhere"
     ]
   }
 ];

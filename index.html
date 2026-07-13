@@ -20,6 +20,55 @@
 </head>
 <body>
   <main id="game" aria-live="polite">
+
+    <section id="setupScreen" class="setup-screen" aria-hidden="false">
+      <div class="setup-panel">
+        <div class="setup-panel__brand">CRASHOUT</div>
+        <h1 class="setup-panel__title">WHERE ARE WE<br>CRASHING OUT?</h1>
+
+        <div class="setup-options" role="group" aria-label="Choose a setting">
+          <button
+            class="setting-option"
+            type="button"
+            data-setting="bar"
+            style="--option-index: 0"
+          >
+            <span class="setting-option__icon" aria-hidden="true">🍻</span>
+            <span>BAR</span>
+          </button>
+
+          <button
+            class="setting-option"
+            type="button"
+            data-setting="pregame"
+            style="--option-index: 1"
+          >
+            <span class="setting-option__icon" aria-hidden="true">🥂</span>
+            <span>PREGAME</span>
+          </button>
+
+          <button
+            class="setting-option"
+            type="button"
+            data-setting="house-party"
+            style="--option-index: 2"
+          >
+            <span class="setting-option__icon" aria-hidden="true">🏠</span>
+            <span>HOUSE PARTY</span>
+          </button>
+
+          <button
+            class="setting-option"
+            type="button"
+            data-setting="anywhere"
+            style="--option-index: 3"
+          >
+            <span class="setting-option__icon" aria-hidden="true">🌎</span>
+            <span>ANYWHERE</span>
+          </button>
+        </div>
+      </div>
+    </section>
     <header class="brand">
       <div class="brand__name">CRASHOUT</div>
       <div id="status" class="brand__status">Put 2–5 fingers down</div>

@@ -10,6 +10,8 @@
   const WINNER_HOLD_MS = 750;
 
   const game = document.getElementById("game");
+  const setupScreen = document.getElementById("setupScreen");
+  const settingOptions = [...document.querySelectorAll(".setting-option")];
   const touchLayer = document.getElementById("touchLayer");
   const statusText = document.getElementById("status");
   const promptScreen = document.getElementById("promptScreen");
@@ -17,7 +19,8 @@
   const nextRoundButton = document.getElementById("nextRound");
 
   const touches = new Map();
-  let gameState = "collecting";
+  let gameState = "setup";
+  let currentSetting = null;
   let readyTimer = null;
   let selectionTimers = [];
   let promptDeckIds = [];
@@ -323,18 +326,24 @@
     return prompts.map((prompt) => prompt.id).join("|");
   }
 
+  function getDeckStorageKey(name) {
+    return `crashout:${currentSetting || "unset"}:${name}`;
+  }
+
   function savePromptDeck() {
+    if (!currentSetting) return;
+
     try {
       localStorage.setItem(
-        "crashoutPromptDeckIds",
+        getDeckStorageKey("promptDeckIds"),
         JSON.stringify(promptDeckIds)
       );
       localStorage.setItem(
-        "crashoutPromptDeckSignature",
+        getDeckStorageKey("promptDeckSignature"),
         promptDeckSignature
       );
       localStorage.setItem(
-        "crashoutLastPromptId",
+        getDeckStorageKey("lastPromptId"),
         lastPromptId || ""
       );
     } catch {
@@ -353,12 +362,14 @@
 
     try {
       storedDeck = JSON.parse(
-        localStorage.getItem("crashoutPromptDeckIds") || "[]"
+        localStorage.getItem(getDeckStorageKey("promptDeckIds")) || "[]"
       );
       storedSignature =
-        localStorage.getItem("crashoutPromptDeckSignature") || "";
+        localStorage.getItem(
+          getDeckStorageKey("promptDeckSignature")
+        ) || "";
       storedLastPromptId =
-        localStorage.getItem("crashoutLastPromptId") || null;
+        localStorage.getItem(getDeckStorageKey("lastPromptId")) || null;
     } catch {
       storedDeck = [];
       storedSignature = "";
@@ -379,6 +390,54 @@
       : shufflePromptIds(availableIds);
 
     savePromptDeck();
+  }
+
+  function getPromptsForCurrentSetting() {
+    const prompts = getPromptsForCurrentSetting();
+
+    if (!currentSetting) return [];
+
+    return prompts.filter((prompt) => {
+      const settings = Array.isArray(prompt.settings)
+        ? prompt.settings
+        : ["bar", "pregame", "house-party", "anywhere"];
+
+      return settings.includes(currentSetting);
+    });
+  }
+
+  function selectSetting(setting, selectedButton) {
+    if (gameState !== "setup") return;
+
+    currentSetting = setting;
+    gameState = "transitioning";
+
+    settingOptions.forEach((button) => {
+      if (button === selectedButton) {
+        button.classList.add("is-selected");
+      } else {
+        button.classList.add("is-dismissing");
+      }
+    });
+
+    vibrate([22, 30, 45]);
+
+    const filteredPrompts = getPromptsForCurrentSetting();
+    promptDeckIds = [];
+    promptDeckSignature = "";
+    lastPromptId = null;
+    loadPromptDeck(filteredPrompts);
+
+    window.setTimeout(() => {
+      setupScreen.classList.add("is-leaving");
+    }, 170);
+
+    window.setTimeout(() => {
+      setupScreen.hidden = true;
+      setupScreen.setAttribute("aria-hidden", "true");
+      gameState = "collecting";
+      updateStatus();
+    }, 620);
   }
 
   function choosePrompt() {
@@ -464,6 +523,12 @@
     updateStatus();
   }
 
+  settingOptions.forEach((button) => {
+    button.addEventListener("click", () => {
+      selectSetting(button.dataset.setting, button);
+    });
+  });
+
   touchLayer.addEventListener("pointerdown", (event) => {
     if (gameState !== "collecting") return;
     if (touches.has(event.pointerId)) return;
@@ -503,13 +568,7 @@
   });
 
   applyRandomTheme();
-
-  const startupPrompts = Array.isArray(window.CRASHOUT_PROMPTS)
-    ? window.CRASHOUT_PROMPTS
-    : [];
-  loadPromptDeck(startupPrompts);
-
-  updateStatus();
+  setStatus("Put 2–5 fingers down");
 
   if ("serviceWorker" in navigator) {
     window.addEventListener("load", () => {
