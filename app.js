@@ -16,7 +16,6 @@
   const promptScreen = document.getElementById("promptScreen");
   const promptText = document.getElementById("promptText");
   const nextRoundButton = document.getElementById("nextRound");
-  const deviceNote = document.getElementById("deviceNote");
 
   const touches = new Map();
   let gameState = "collecting";
@@ -72,13 +71,7 @@
     }
   }
 
-  const reportedTouchLimit = navigator.maxTouchPoints || 0;
   const effectiveMax = MAX_FINGERS;
-
-  deviceNote.textContent =
-    reportedTouchLimit > 0
-      ? `Browser reports up to ${reportedTouchLimit} simultaneous touches. Crashout accepts up to ${MAX_FINGERS} if the hardware allows it.`
-      : `Crashout accepts up to ${MAX_FINGERS} simultaneous touches.`;
 
   function setStatus(message) {
     statusText.textContent = message;
@@ -178,7 +171,7 @@
     const lockedCount = [...touches.values()].filter((touch) => touch.locked).length;
 
     if (count === 0) {
-      setStatus(`Put ${MIN_FINGERS}–${effectiveMax} fingers down`);
+      setStatus("Put 2–5 fingers down");
     } else if (count < MIN_FINGERS) {
       setStatus("Add at least one more finger");
     } else if (lockedCount < count) {
@@ -399,7 +392,7 @@
     if (touches.has(event.pointerId)) return;
 
     if (touches.size >= effectiveMax) {
-      setStatus(`This device is capped at ${effectiveMax} fingers`);
+      setStatus("This phone cannot register another finger");
       vibrate(35);
       return;
     }

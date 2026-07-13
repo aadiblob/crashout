@@ -17,10 +17,12 @@ html,
 body {
   width: 100%;
   height: 100%;
+  min-height: 100%;
+  min-height: -webkit-fill-available;
   margin: 0;
   overflow: hidden;
   overscroll-behavior: none;
-  background: var(--bg-a);
+  background: linear-gradient(var(--bg-angle), var(--bg-a), var(--bg-b));
   color: var(--white);
   font-family: Inter, ui-rounded, "SF Pro Rounded", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
@@ -38,6 +40,10 @@ button {
 #game {
   position: fixed;
   inset: 0;
+  width: 100vw;
+  height: 100vh;
+  height: 100dvh;
+  min-height: -webkit-fill-available;
   isolation: isolate;
   overflow: hidden;
   background:
@@ -223,19 +229,6 @@ button {
   transform: scale(0.97);
 }
 
-.device-note {
-  position: absolute;
-  left: 18px;
-  right: 18px;
-  bottom: calc(14px + var(--safe-bottom));
-  z-index: 4;
-  min-height: 18px;
-  text-align: center;
-  font-size: 0.75rem;
-  font-weight: 700;
-  opacity: 0.68;
-  pointer-events: none;
-}
 
 body.is-selecting #game {
   animation: backgroundPulse 0.42s ease-in-out infinite alternate;

@@ -1,4 +1,4 @@
-# Crashout V2
+# Crashout V3
 
 A mobile-first, one-phone finger chooser that immediately gives the selected player an unhinged dare.
 
@@ -70,3 +70,12 @@ The code accepts up to eight touches, but the physical touchscreen and browser d
 The JavaScript accepts up to eight touches. The physical phone digitizer and mobile browser
 still determine how many contacts can actually be reported. A device that only emits five
 touch contacts cannot be forced to emit a sixth through HTML or JavaScript.
+
+
+## V3 changes
+
+- Player-facing subtitle now says `Put 2–5 fingers down`
+- Removed the bottom touch-capability disclaimer
+- Fixed iOS standalone viewport sizing with `100dvh` and `-webkit-fill-available`
+- Matched the page background to the active gradient so no solid strip appears below the app
+- Retained internal support for up to eight pointer contacts on capable hardware
