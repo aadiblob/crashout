@@ -8,8 +8,7 @@ window.CRASHOUT_PROMPTS = [
     ],
     "settings": [
       "bar",
-      "pregame",
-      "house-party",
+      "pregame-house",
       "anywhere"
     ]
   },
@@ -22,7 +21,7 @@ window.CRASHOUT_PROMPTS = [
     ],
     "settings": [
       "bar",
-      "house-party"
+      "pregame-house"
     ]
   },
   {
@@ -34,7 +33,7 @@ window.CRASHOUT_PROMPTS = [
     ],
     "settings": [
       "bar",
-      "house-party"
+      "pregame-house"
     ]
   },
   {
@@ -57,8 +56,7 @@ window.CRASHOUT_PROMPTS = [
     ],
     "settings": [
       "bar",
-      "pregame",
-      "house-party",
+      "pregame-house",
       "anywhere"
     ]
   },
@@ -71,8 +69,7 @@ window.CRASHOUT_PROMPTS = [
     ],
     "settings": [
       "bar",
-      "pregame",
-      "house-party",
+      "pregame-house",
       "anywhere"
     ]
   },
@@ -85,8 +82,7 @@ window.CRASHOUT_PROMPTS = [
     ],
     "settings": [
       "bar",
-      "pregame",
-      "house-party",
+      "pregame-house",
       "anywhere"
     ]
   },
@@ -99,8 +95,7 @@ window.CRASHOUT_PROMPTS = [
     ],
     "settings": [
       "bar",
-      "pregame",
-      "house-party",
+      "pregame-house",
       "anywhere"
     ]
   },
@@ -113,8 +108,7 @@ window.CRASHOUT_PROMPTS = [
     ],
     "settings": [
       "bar",
-      "pregame",
-      "house-party",
+      "pregame-house",
       "anywhere"
     ]
   },
@@ -127,8 +121,7 @@ window.CRASHOUT_PROMPTS = [
     ],
     "settings": [
       "bar",
-      "pregame",
-      "house-party",
+      "pregame-house",
       "anywhere"
     ]
   },
@@ -141,8 +134,7 @@ window.CRASHOUT_PROMPTS = [
     ],
     "settings": [
       "bar",
-      "pregame",
-      "house-party",
+      "pregame-house",
       "anywhere"
     ]
   },
@@ -155,8 +147,7 @@ window.CRASHOUT_PROMPTS = [
     ],
     "settings": [
       "bar",
-      "pregame",
-      "house-party",
+      "pregame-house",
       "anywhere"
     ]
   },
@@ -169,8 +160,7 @@ window.CRASHOUT_PROMPTS = [
     ],
     "settings": [
       "bar",
-      "pregame",
-      "house-party",
+      "pregame-house",
       "anywhere"
     ]
   },
@@ -183,8 +173,7 @@ window.CRASHOUT_PROMPTS = [
     ],
     "settings": [
       "bar",
-      "pregame",
-      "house-party",
+      "pregame-house",
       "anywhere"
     ]
   },
@@ -197,8 +186,7 @@ window.CRASHOUT_PROMPTS = [
     ],
     "settings": [
       "bar",
-      "pregame",
-      "house-party",
+      "pregame-house",
       "anywhere"
     ]
   },
@@ -211,8 +199,7 @@ window.CRASHOUT_PROMPTS = [
     ],
     "settings": [
       "bar",
-      "pregame",
-      "house-party",
+      "pregame-house",
       "anywhere"
     ]
   },
@@ -225,8 +212,7 @@ window.CRASHOUT_PROMPTS = [
     ],
     "settings": [
       "bar",
-      "pregame",
-      "house-party",
+      "pregame-house",
       "anywhere"
     ]
   },
@@ -239,8 +225,7 @@ window.CRASHOUT_PROMPTS = [
     ],
     "settings": [
       "bar",
-      "pregame",
-      "house-party",
+      "pregame-house",
       "anywhere"
     ]
   },
@@ -253,8 +238,7 @@ window.CRASHOUT_PROMPTS = [
     ],
     "settings": [
       "bar",
-      "pregame",
-      "house-party",
+      "pregame-house",
       "anywhere"
     ]
   },
@@ -267,8 +251,7 @@ window.CRASHOUT_PROMPTS = [
     ],
     "settings": [
       "bar",
-      "pregame",
-      "house-party",
+      "pregame-house",
       "anywhere"
     ]
   },
@@ -281,8 +264,7 @@ window.CRASHOUT_PROMPTS = [
     ],
     "settings": [
       "bar",
-      "pregame",
-      "house-party",
+      "pregame-house",
       "anywhere"
     ]
   },
@@ -295,8 +277,7 @@ window.CRASHOUT_PROMPTS = [
     ],
     "settings": [
       "bar",
-      "pregame",
-      "house-party",
+      "pregame-house",
       "anywhere"
     ]
   },
@@ -309,8 +290,7 @@ window.CRASHOUT_PROMPTS = [
     ],
     "settings": [
       "bar",
-      "pregame",
-      "house-party",
+      "pregame-house",
       "anywhere"
     ]
   },
@@ -323,8 +303,7 @@ window.CRASHOUT_PROMPTS = [
     ],
     "settings": [
       "bar",
-      "pregame",
-      "house-party",
+      "pregame-house",
       "anywhere"
     ]
   },
@@ -337,8 +316,7 @@ window.CRASHOUT_PROMPTS = [
     ],
     "settings": [
       "bar",
-      "pregame",
-      "house-party",
+      "pregame-house",
       "anywhere"
     ]
   },
@@ -351,7 +329,7 @@ window.CRASHOUT_PROMPTS = [
     ],
     "settings": [
       "bar",
-      "house-party"
+      "pregame-house"
     ]
   },
   {
@@ -363,8 +341,7 @@ window.CRASHOUT_PROMPTS = [
     ],
     "settings": [
       "bar",
-      "pregame",
-      "house-party",
+      "pregame-house",
       "anywhere"
     ]
   },
@@ -377,8 +354,7 @@ window.CRASHOUT_PROMPTS = [
     ],
     "settings": [
       "bar",
-      "pregame",
-      "house-party",
+      "pregame-house",
       "anywhere"
     ]
   },
@@ -391,8 +367,7 @@ window.CRASHOUT_PROMPTS = [
     ],
     "settings": [
       "bar",
-      "pregame",
-      "house-party",
+      "pregame-house",
       "anywhere"
     ]
   },
@@ -405,8 +380,7 @@ window.CRASHOUT_PROMPTS = [
     ],
     "settings": [
       "bar",
-      "pregame",
-      "house-party",
+      "pregame-house",
       "anywhere"
     ]
   },
@@ -419,7 +393,7 @@ window.CRASHOUT_PROMPTS = [
     ],
     "settings": [
       "bar",
-      "house-party"
+      "pregame-house"
     ]
   },
   {
@@ -431,8 +405,7 @@ window.CRASHOUT_PROMPTS = [
     ],
     "settings": [
       "bar",
-      "pregame",
-      "house-party",
+      "pregame-house",
       "anywhere"
     ]
   },
@@ -445,8 +418,7 @@ window.CRASHOUT_PROMPTS = [
     ],
     "settings": [
       "bar",
-      "pregame",
-      "house-party",
+      "pregame-house",
       "anywhere"
     ]
   },
@@ -470,8 +442,7 @@ window.CRASHOUT_PROMPTS = [
     ],
     "settings": [
       "bar",
-      "pregame",
-      "house-party",
+      "pregame-house",
       "anywhere"
     ]
   },
@@ -484,8 +455,7 @@ window.CRASHOUT_PROMPTS = [
     ],
     "settings": [
       "bar",
-      "pregame",
-      "house-party",
+      "pregame-house",
       "anywhere"
     ]
   },
@@ -498,8 +468,7 @@ window.CRASHOUT_PROMPTS = [
     ],
     "settings": [
       "bar",
-      "pregame",
-      "house-party",
+      "pregame-house",
       "anywhere"
     ]
   },
@@ -512,7 +481,7 @@ window.CRASHOUT_PROMPTS = [
     ],
     "settings": [
       "bar",
-      "house-party"
+      "pregame-house"
     ]
   },
   {
@@ -524,7 +493,7 @@ window.CRASHOUT_PROMPTS = [
     ],
     "settings": [
       "bar",
-      "house-party"
+      "pregame-house"
     ]
   },
   {
@@ -536,8 +505,7 @@ window.CRASHOUT_PROMPTS = [
     ],
     "settings": [
       "bar",
-      "pregame",
-      "house-party",
+      "pregame-house",
       "anywhere"
     ]
   },
@@ -550,8 +518,7 @@ window.CRASHOUT_PROMPTS = [
     ],
     "settings": [
       "bar",
-      "pregame",
-      "house-party",
+      "pregame-house",
       "anywhere"
     ]
   },
@@ -564,7 +531,7 @@ window.CRASHOUT_PROMPTS = [
     ],
     "settings": [
       "bar",
-      "house-party"
+      "pregame-house"
     ]
   },
   {
@@ -587,7 +554,7 @@ window.CRASHOUT_PROMPTS = [
     ],
     "settings": [
       "bar",
-      "house-party"
+      "pregame-house"
     ]
   },
   {
@@ -599,7 +566,7 @@ window.CRASHOUT_PROMPTS = [
     ],
     "settings": [
       "bar",
-      "house-party"
+      "pregame-house"
     ]
   },
   {
@@ -611,7 +578,7 @@ window.CRASHOUT_PROMPTS = [
     ],
     "settings": [
       "bar",
-      "house-party"
+      "pregame-house"
     ]
   },
   {
@@ -623,7 +590,7 @@ window.CRASHOUT_PROMPTS = [
     ],
     "settings": [
       "bar",
-      "house-party"
+      "pregame-house"
     ]
   },
   {
@@ -635,8 +602,7 @@ window.CRASHOUT_PROMPTS = [
     ],
     "settings": [
       "bar",
-      "pregame",
-      "house-party",
+      "pregame-house",
       "anywhere"
     ]
   },
@@ -649,8 +615,7 @@ window.CRASHOUT_PROMPTS = [
     ],
     "settings": [
       "bar",
-      "pregame",
-      "house-party",
+      "pregame-house",
       "anywhere"
     ]
   },
@@ -663,8 +628,7 @@ window.CRASHOUT_PROMPTS = [
     ],
     "settings": [
       "bar",
-      "pregame",
-      "house-party",
+      "pregame-house",
       "anywhere"
     ]
   },
@@ -677,8 +641,7 @@ window.CRASHOUT_PROMPTS = [
     ],
     "settings": [
       "bar",
-      "pregame",
-      "house-party",
+      "pregame-house",
       "anywhere"
     ]
   },
@@ -691,8 +654,7 @@ window.CRASHOUT_PROMPTS = [
     ],
     "settings": [
       "bar",
-      "pregame",
-      "house-party",
+      "pregame-house",
       "anywhere"
     ]
   },
@@ -705,8 +667,7 @@ window.CRASHOUT_PROMPTS = [
     ],
     "settings": [
       "bar",
-      "pregame",
-      "house-party",
+      "pregame-house",
       "anywhere"
     ]
   },
@@ -719,8 +680,7 @@ window.CRASHOUT_PROMPTS = [
     ],
     "settings": [
       "bar",
-      "pregame",
-      "house-party",
+      "pregame-house",
       "anywhere"
     ]
   },
@@ -733,8 +693,7 @@ window.CRASHOUT_PROMPTS = [
     ],
     "settings": [
       "bar",
-      "pregame",
-      "house-party",
+      "pregame-house",
       "anywhere"
     ]
   },
@@ -747,8 +706,7 @@ window.CRASHOUT_PROMPTS = [
     ],
     "settings": [
       "bar",
-      "pregame",
-      "house-party",
+      "pregame-house",
       "anywhere"
     ]
   },
@@ -761,8 +719,7 @@ window.CRASHOUT_PROMPTS = [
     ],
     "settings": [
       "bar",
-      "pregame",
-      "house-party",
+      "pregame-house",
       "anywhere"
     ]
   },
@@ -775,8 +732,7 @@ window.CRASHOUT_PROMPTS = [
     ],
     "settings": [
       "bar",
-      "pregame",
-      "house-party",
+      "pregame-house",
       "anywhere"
     ]
   },
@@ -789,8 +745,7 @@ window.CRASHOUT_PROMPTS = [
     ],
     "settings": [
       "bar",
-      "pregame",
-      "house-party",
+      "pregame-house",
       "anywhere"
     ]
   },
@@ -803,8 +758,7 @@ window.CRASHOUT_PROMPTS = [
     ],
     "settings": [
       "bar",
-      "pregame",
-      "house-party",
+      "pregame-house",
       "anywhere"
     ]
   },
@@ -817,8 +771,7 @@ window.CRASHOUT_PROMPTS = [
     ],
     "settings": [
       "bar",
-      "pregame",
-      "house-party",
+      "pregame-house",
       "anywhere"
     ]
   },
@@ -831,8 +784,7 @@ window.CRASHOUT_PROMPTS = [
     ],
     "settings": [
       "bar",
-      "pregame",
-      "house-party",
+      "pregame-house",
       "anywhere"
     ]
   },
@@ -845,8 +797,7 @@ window.CRASHOUT_PROMPTS = [
     ],
     "settings": [
       "bar",
-      "pregame",
-      "house-party",
+      "pregame-house",
       "anywhere"
     ]
   },
@@ -859,8 +810,7 @@ window.CRASHOUT_PROMPTS = [
     ],
     "settings": [
       "bar",
-      "pregame",
-      "house-party",
+      "pregame-house",
       "anywhere"
     ]
   },
@@ -873,8 +823,7 @@ window.CRASHOUT_PROMPTS = [
     ],
     "settings": [
       "bar",
-      "pregame",
-      "house-party",
+      "pregame-house",
       "anywhere"
     ]
   },
@@ -887,8 +836,7 @@ window.CRASHOUT_PROMPTS = [
     ],
     "settings": [
       "bar",
-      "pregame",
-      "house-party",
+      "pregame-house",
       "anywhere"
     ]
   },
@@ -901,7 +849,7 @@ window.CRASHOUT_PROMPTS = [
     ],
     "settings": [
       "bar",
-      "house-party"
+      "pregame-house"
     ]
   },
   {
@@ -913,8 +861,7 @@ window.CRASHOUT_PROMPTS = [
     ],
     "settings": [
       "bar",
-      "pregame",
-      "house-party"
+      "pregame-house"
     ]
   },
   {
@@ -926,8 +873,7 @@ window.CRASHOUT_PROMPTS = [
     ],
     "settings": [
       "bar",
-      "pregame",
-      "house-party",
+      "pregame-house",
       "anywhere"
     ]
   },
@@ -940,8 +886,7 @@ window.CRASHOUT_PROMPTS = [
     ],
     "settings": [
       "bar",
-      "pregame",
-      "house-party",
+      "pregame-house",
       "anywhere"
     ]
   },
@@ -955,8 +900,7 @@ window.CRASHOUT_PROMPTS = [
     ],
     "settings": [
       "bar",
-      "pregame",
-      "house-party",
+      "pregame-house",
       "anywhere"
     ]
   },
@@ -969,8 +913,7 @@ window.CRASHOUT_PROMPTS = [
     ],
     "settings": [
       "bar",
-      "pregame",
-      "house-party",
+      "pregame-house",
       "anywhere"
     ]
   },
@@ -983,8 +926,7 @@ window.CRASHOUT_PROMPTS = [
     ],
     "settings": [
       "bar",
-      "pregame",
-      "house-party",
+      "pregame-house",
       "anywhere"
     ]
   },
@@ -997,8 +939,7 @@ window.CRASHOUT_PROMPTS = [
     ],
     "settings": [
       "bar",
-      "pregame",
-      "house-party",
+      "pregame-house",
       "anywhere"
     ]
   },
@@ -1011,8 +952,7 @@ window.CRASHOUT_PROMPTS = [
     ],
     "settings": [
       "bar",
-      "pregame",
-      "house-party",
+      "pregame-house",
       "anywhere"
     ]
   },
@@ -1025,8 +965,7 @@ window.CRASHOUT_PROMPTS = [
     ],
     "settings": [
       "bar",
-      "pregame",
-      "house-party",
+      "pregame-house",
       "anywhere"
     ]
   },
@@ -1039,8 +978,7 @@ window.CRASHOUT_PROMPTS = [
     ],
     "settings": [
       "bar",
-      "pregame",
-      "house-party",
+      "pregame-house",
       "anywhere"
     ]
   },
@@ -1053,8 +991,7 @@ window.CRASHOUT_PROMPTS = [
     ],
     "settings": [
       "bar",
-      "pregame",
-      "house-party",
+      "pregame-house",
       "anywhere"
     ]
   },
@@ -1067,7 +1004,7 @@ window.CRASHOUT_PROMPTS = [
     ],
     "settings": [
       "bar",
-      "house-party"
+      "pregame-house"
     ]
   },
   {
@@ -1090,7 +1027,7 @@ window.CRASHOUT_PROMPTS = [
     ],
     "settings": [
       "bar",
-      "house-party"
+      "pregame-house"
     ]
   },
   {
@@ -1102,7 +1039,7 @@ window.CRASHOUT_PROMPTS = [
     ],
     "settings": [
       "bar",
-      "house-party"
+      "pregame-house"
     ]
   },
   {
@@ -1114,8 +1051,7 @@ window.CRASHOUT_PROMPTS = [
     ],
     "settings": [
       "bar",
-      "pregame",
-      "house-party",
+      "pregame-house",
       "anywhere"
     ]
   },
@@ -1128,8 +1064,7 @@ window.CRASHOUT_PROMPTS = [
     ],
     "settings": [
       "bar",
-      "pregame",
-      "house-party",
+      "pregame-house",
       "anywhere"
     ]
   },
@@ -1142,8 +1077,7 @@ window.CRASHOUT_PROMPTS = [
     ],
     "settings": [
       "bar",
-      "pregame",
-      "house-party",
+      "pregame-house",
       "anywhere"
     ]
   },
@@ -1156,8 +1090,176 @@ window.CRASHOUT_PROMPTS = [
     ],
     "settings": [
       "bar",
-      "pregame",
-      "house-party",
+      "pregame-house",
+      "anywhere"
+    ]
+  },
+  {
+    "id": "dare-087",
+    "text": "Take a group photo that looks like the cover of a failed indie album.",
+    "tags": [
+      "group",
+      "photo"
+    ],
+    "settings": [
+      "bar",
+      "pregame-house",
+      "anywhere"
+    ]
+  },
+  {
+    "id": "dare-088",
+    "text": "Compliment a stranger’s outfit without using the words “nice,” “cool,” or “fire.”",
+    "tags": [
+      "public",
+      "social"
+    ],
+    "settings": [
+      "bar"
+    ]
+  },
+  {
+    "id": "dare-089",
+    "text": "Get the group to raise their drinks and toast to something completely insignificant.",
+    "tags": [
+      "group",
+      "drink"
+    ],
+    "settings": [
+      "bar",
+      "pregame-house"
+    ]
+  },
+  {
+    "id": "dare-090",
+    "text": "Find someone wearing the same color as you and ask for a photo together.",
+    "tags": [
+      "public",
+      "photo"
+    ],
+    "settings": [
+      "bar"
+    ]
+  },
+  {
+    "id": "dare-091",
+    "text": "Ask someone nearby to take a group photo, then all pose like you are being arrested.",
+    "tags": [
+      "public",
+      "group",
+      "photo"
+    ],
+    "settings": [
+      "bar"
+    ]
+  },
+  {
+    "id": "dare-092",
+    "text": "Introduce one of your friends to someone using a completely fake job title.",
+    "tags": [
+      "public",
+      "social",
+      "group"
+    ],
+    "settings": [
+      "bar"
+    ]
+  },
+  {
+    "id": "dare-093",
+    "text": "Text your most recent contact: “We are so back.”",
+    "tags": [
+      "phone",
+      "messages"
+    ],
+    "settings": [
+      "bar",
+      "pregame-house",
+      "anywhere"
+    ]
+  },
+  {
+    "id": "dare-094",
+    "text": "Read the title of your strangest Notes app entry. You do not have to open it.",
+    "tags": [
+      "phone",
+      "notes"
+    ],
+    "settings": [
+      "bar",
+      "pregame-house",
+      "anywhere"
+    ]
+  },
+  {
+    "id": "dare-095",
+    "text": "Find the strangest object nearby and pitch it like a Shark Tank product.",
+    "tags": [
+      "performance",
+      "object"
+    ],
+    "settings": [
+      "pregame-house"
+    ]
+  },
+  {
+    "id": "dare-096",
+    "text": "Pretend the floor is lava for ten seconds. Nobody else has to participate.",
+    "tags": [
+      "silly",
+      "performance"
+    ],
+    "settings": [
+      "pregame-house"
+    ]
+  },
+  {
+    "id": "dare-097",
+    "text": "Create a new handshake with the person to your right.",
+    "tags": [
+      "group",
+      "performance"
+    ],
+    "settings": [
+      "pregame-house",
+      "anywhere"
+    ]
+  },
+  {
+    "id": "dare-098",
+    "text": "Choose someone and recreate a dramatic movie breakup scene with them.",
+    "tags": [
+      "group",
+      "performance"
+    ],
+    "settings": [
+      "pregame-house",
+      "anywhere"
+    ]
+  },
+  {
+    "id": "truth-099",
+    "text": "Who was the last person whose profile you searched?",
+    "tags": [
+      "truth",
+      "social-media"
+    ],
+    "settings": [
+      "bar",
+      "pregame-house",
+      "anywhere"
+    ]
+  },
+  {
+    "id": "group-100",
+    "text": "Choose a word. Go around the circle saying rhyming words until someone hesitates, repeats, or fails.",
+    "tags": [
+      "group",
+      "word-game"
+    ],
+    "settings": [
+      "bar",
+      "pregame-house",
       "anywhere"
     ]
   }

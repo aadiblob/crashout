@@ -402,7 +402,7 @@
     return prompts.filter((prompt) => {
       const settings = Array.isArray(prompt.settings)
         ? prompt.settings
-        : ["bar", "pregame", "house-party", "anywhere"];
+        : ["bar", "pregame-house", "anywhere"];
 
       return settings.includes(currentSetting);
     });
