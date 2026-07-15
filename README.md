@@ -4,10 +4,9 @@ A mobile-first, one-phone finger chooser that immediately gives the selected pla
 
 ## V1 features
 
-- Tracks 2–8 simultaneous fingers, limited by the phone's reported touch support
+- Tracks 5 simultaneous fingers, limited by the phone's reported touch support
 - White rings that become solid circles after each finger holds still
 - Automatic random winner selection using `crypto.getRandomValues`
-- 57 starter dares
 - Avoids recently used prompts and immediate prompt-style repetition
 - Installable Progressive Web App
 - Offline support after the first load
@@ -25,16 +24,6 @@ python -m http.server 8000
 
 Then open `http://localhost:8000` on a browser. Multi-touch should be tested on a real phone.
 
-## Deploy with Cloudflare Pages
-
-1. Create a new GitHub repository named `crashout`.
-2. Upload all files in this folder to the repository root.
-3. In Cloudflare, open **Workers & Pages** and create a Pages project.
-4. Connect the `crashout` GitHub repository.
-5. Choose **No framework**.
-6. Leave the build command blank.
-7. Set the output directory to `/` or leave it at the repository root.
-8. Deploy.
 
 Every push to the main GitHub branch will update the site.
 
@@ -65,17 +54,11 @@ The code accepts up to eight touches, but the physical touchscreen and browser d
 - Accepts up to eight pointer events even when the browser reports a lower hardware limit
 - Uses a network-first service worker so GitHub/Cloudflare updates appear more reliably
 
-### Multi-touch hardware limitation
-
-The JavaScript accepts up to eight touches. The physical phone digitizer and mobile browser
-still determine how many contacts can actually be reported. A device that only emits five
-touch contacts cannot be forced to emit a sixth through HTML or JavaScript.
 
 
 ## V3 changes
 
 - Player-facing subtitle now says `Put 2–5 fingers down`
-- Removed the bottom touch-capability disclaimer
 - Fixed iOS standalone viewport sizing with `100dvh` and `-webkit-fill-available`
 - Matched the page background to the active gradient so no solid strip appears below the app
 - Retained internal support for up to eight pointer contacts on capable hardware
